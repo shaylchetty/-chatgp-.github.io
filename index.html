@@ -79,6 +79,9 @@
 	      
 	<img src=https://lh3.googleusercontent.com/quLkTv4TLfy4mAUEz-KXggL-DYFLM5rkoWJayclQtadlZ-qIDyNaZUKkCc1kxIt4CiiY5tNSY9bKPPckT4zwy0tXXns1oPzMLFe2ZbpuYoPubyfUjSMxtOgObbAZO8vT7NT3zcFXXQ=w2400 />
 	      
+	 
+	 <p> As demonstrated by the plot above, the distribution of pity counts in relation to when legendary and rare items were obtained does not comply to the expected geometric distribution, thus we concluded there must be other factors at play. In the plots below, we attempt to elucidate this by visualizing comparisons between several factors. </p>
+	      
 	      
 	<p>The number of loot boxes that were open before a 4 or 5 star prize was recieved</p>
 	      
@@ -116,6 +119,7 @@
 	      
 	<h1> We turned to statistical models to delve deeper into how these facts influence the pity mechanism </h1>
 	      
+	      <p> Although the plots above showed slight differences in the distributions when certain factors were changed, it's difficult to make substantial conclusions based on these visualizations alone. Thus, we turned to statistical models to more further explore this trend. </p>
 	      <p> The first step was creating two datasets, which each take in the 5 factors supplied in the pull.csv data and output a probability distribution of the pity values at which an item can be expected. For the rare (four star) dataset, the output represents the probability a rare item will be obtained at that pity value. For the legendary (five star) dataset, the output is similar, but binned into groups of 10 to span the ful 0 to 90 possible pity values. </p>
 	      <p> We first tried a simple linear regression model, which performed fairly well, predicting with 30% accuracy on the legendary dataset and 12% accuracy on the rare. This was significantly better than the base probability, but nevertheless we sought to further improve by turning to the more complex deep learning. <p>
 	      
